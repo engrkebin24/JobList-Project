@@ -1,0 +1,60 @@
+.homepageContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #4caf50;
+}
+
+.appNameAndButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+}
+
+.appNameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.appNameContainer h1 {
+  font-size: 150px;
+  font-weight: 700;
+  color: #5f3215;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 
+               1px -1px 0 #000000, -1px 1px 0 #000000;
+  margin: 25px;
+}
+
+.appNameContainer p {
+  font-size: 58px;
+  font-weight: 700;
+  color: #e8b46f;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 10px;
+}
+
+.homepageButtonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.homepageButtonsContainer button {
+  font-size: 30px;
+  font-weight: 700;
+  color: #5f3215;
+  background-color: #e8bd44;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
