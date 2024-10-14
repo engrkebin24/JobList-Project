@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import JobListPanel from "../../components/JobListPanel/JobListPanel";
 import JobDetails from "../../components/JobDetails/JobDetails";
+import NavBar from "../../components/NavBar/NavBar";
 import styles from "./JobsPage.module.css";
 
 const jobs = [
@@ -113,7 +114,7 @@ export default function JobsPage() {
   return (
    
     <div>
-    
+       <NavBar />
 
       <div className={styles.jobListAndDetailsContainer}>
         <div className={styles.jobList}>

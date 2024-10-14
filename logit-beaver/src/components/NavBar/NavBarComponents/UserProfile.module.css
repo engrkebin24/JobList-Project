@@ -1,0 +1,28 @@
+.dropdown {
+    position: relative; /* Ensure the parent container is positioned */
+    cursor: pointer;
+    margin-right: 30px;
+    justify-content: right;
+  }
+  
+  .userProfileImage {
+    height: 65px;
+    margin-left: 135px;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    width: 200px; /* Set the width of the dropdown menu */
+    top: 100%; /* Position the dropdown below the trigger element */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px #000000;
+    margin-top: 25px;
+    margin-right: 40px;
+    padding-right: 5px;
+    z-index: 1000; /* Ensure the dropdown is above other elements */
+    font-size: 20px;
+    list-style: none;
+    text-align: right;
+  }
+  
