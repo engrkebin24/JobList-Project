@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import beaver from "../../../assets/beaver.png";
 import styles from "./UserProfile.module.css";
 
+// Placeholder component for a User Profile dropdown menu
+
 export default function UserProfileMenu() {
+   // State to manage the dropdown menu visibility
   const [isOpen, setIsOpen] = useState(false);
 
-  // Toggle the dropdown
+  // Function to toggle the dropdown menu
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -13,7 +16,7 @@ export default function UserProfileMenu() {
   return (
     
     <div className={styles.dropdown}>
-      {/* The image that triggers the dropdown */}
+      {/* Placeholder component for the logged in User's Avatar*/}
       <img
         className={styles.userProfileImage} 
         src={beaver}

@@ -4,6 +4,7 @@ import JobDetails from "../../components/JobDetails/JobDetails";
 import NavBar from "../../components/NavBar/NavBar";
 import styles from "./JobsPage.module.css";
 
+// Sample Job Data
 const jobs = [
   {
     job_id: "01",
@@ -102,18 +103,25 @@ const jobs = [
 ];
 
 export default function JobsPage() {
-  const [selectedJob, setSelectedJob] = useState(null);
-  const [sortCriteria, setSortCriteria] = useState({
+  // State for the selected Job
+  const [selectedJob, setSelectedJob] = useState(null); 
+
+  // State for Job sorting Criteria
+  const [sortCriteria, setSortCriteria] = useState({  
     criteria: "id",
     order: "asc",
   });
-  const [filterStatus, setFilterStatus] = useState("");
 
+  // State for Job Status filtering 
+  const [filterStatus, setFilterStatus] = useState(""); 
+
+  // Function to reset the selected job (when the "View All Jobs" button is clicked)
   const resetSelection = () => {
     setSelectedJob(null);
   };
 
-  const toggleSortOrder = (criteria) => {
+   // Function to toggle Job sort order based on criteria
+  const toggleSortOrder = (criteria) => { 
     setSortCriteria((prevState) => ({
       criteria,
       order:
@@ -123,17 +131,22 @@ export default function JobsPage() {
     }));
   };
 
+    // Function to handle Job status filter change
   const handleFilterChange = (event) => {
     setFilterStatus(event.target.value);
   };
 
+  // Function to get list of filtered and sorted jobs
   const getFilteredAndSortedJobs = () => {
     let filteredJobs = jobs;
 
+
+    // Filter jobs based on Job Status
     if (filterStatus) {
       filteredJobs = filteredJobs.filter((job) => job.job_status === filterStatus);
     }
 
+     // Sort jobs based on criteria
     if (sortCriteria.criteria) {
       filteredJobs = filteredJobs.sort((a, b) => {
         let comparison = 0;
@@ -152,8 +165,10 @@ export default function JobsPage() {
   return (
    
     <div>
+       {/* Navigation bar */}
        <NavBar />
-   
+
+       {/* Job sorting and filtering buttons */}
       <div className={styles.sortAndFilterButtons}>
         <div className={styles.jobSortButtons}>
           <h3>Sort by:</h3>
@@ -184,13 +199,18 @@ export default function JobsPage() {
         
       </div>
 
+       {/* Job List and Job Details panels container */}
       <div className={styles.jobListAndDetailsContainer}>
         <div className={styles.jobList}>
+
+           {/* Job List panel */}
           <JobListPanel
             jobs={getFilteredAndSortedJobs()}
             onJobClick={setSelectedJob}
           />
         </div>
+          
+          {/* Job Details panel */}
         <div className={styles.jobDetailsPane}>
           <JobDetails job={selectedJob} onResetSelection={resetSelection} />
         </div>
