@@ -25,7 +25,7 @@
     opacity: 1;
   }
 
-  .navbarAppName {
+  .navBarAppName {
     font-size: 50px;
     font-weight: 700;
     color: #5f3215;
@@ -38,8 +38,9 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    color: #ffad87;
-    font-size: 18px;
+    color: #ffcfb9;
+    text-shadow: 0.5px 0.5px 1px #000000;
+    font-size: 22px;
     font-weight: bolder;
     cursor: pointer;
   }

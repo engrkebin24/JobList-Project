@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: #5f3215;
-  background-color: #1b4b1e;
+  background-color: #0ca551;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,10 +18,10 @@
 @media (prefers-color-scheme: light) {
   :root {
     color:  #5f3215;
-    background-color: #75ff7a;
+    background-color: #c5ffc7;
   }
   a:hover {
-    color: #fffb00;
+    color: #5f3215;
   }
   
 }

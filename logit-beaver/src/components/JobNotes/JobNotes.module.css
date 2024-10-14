@@ -104,11 +104,11 @@
 .saveNoteButton {
     font-size: 12px;
     font-weight: 700;
-    color: #af8102;
-    background-color: #fff1c9;
+    color: #fff1c9; 
+    background-color: #af8102 ;
     border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   
@@ -121,7 +121,7 @@
     background-color: #fff1c9;
     border: none;
     border-radius: 5px;
-    padding: 3px;
+    padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     opacity: 0.8;
