@@ -6,7 +6,7 @@ LogIt Beaver is a simple application designed to help tradies log and manage job
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/LogIt-Beaver.git](https://github.com/engrkebin24/JobList-Project.git
+    git clone https://github.com/engrkebin24/JobList-Project.git
     ```
 2. Navigate to the main project directory:
     ```sh
