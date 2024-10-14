@@ -1,14 +1,13 @@
 .jobRow {
-    margin: 10px;
-    background-color: #A5D6A7;
-    border: 2px groove #388E3C;
-    cursor: pointer;
-
+  margin: 10px;
+  background-color: #a5d6a7;
+  border: 2px groove #388e3c;
+  cursor: pointer;
 }
 
 .jobRow:hover {
-    opacity: 0.9;
-    border: 3px solid #ffce8f;
+  opacity: 0.9;
+  border: 3px solid #ffce8f;
 }
 
 .jobHeader {
@@ -19,7 +18,7 @@
   font-size: 20px;
   letter-spacing: 2px;
   color: #ffce8f;
-  background-color: #388E3C;
+  background-color: #388e3c;
   border: 1px solid #327e36;
 }
 
@@ -38,50 +37,49 @@
 }
 
 .jobStatus {
-   font: oblique bold 16px Georgia, 'Times New Roman', Times, serif;
-   border: 2px groove;
-   border-radius: 5px;
-   padding: 8px;
-  }
-  
-  .scheduled {
-    color: #020200;
-    background-color: #edff4a;
-    border-color: #edff4a;
-  }
-  
-  .active {
-    color: #000000;
-    background-color: #00BCD4;
-    border-color: #00BCD4;
-    
-  }
-  
-  .invoicing {
-    color: #000000;
-    background-color: #FFC107;
-    border-color: #FFC107;
-  }
+  font: oblique bold 16px Georgia, "Times New Roman", Times, serif;
+  border: 2px groove;
+  border-radius: 5px;
+  padding: 8px;
+}
 
-  .completed {
-    color: #000000;
-    background-color: #88ff00;
-    border-color: #88ff00;
-  }
-  
-  .toPrice {
-    color: #000000;
-    background-color: #ff00aa;
-    border: #ff00aa;
-  }
+.scheduled {
+  color: #020200;
+  background-color: #edff4a;
+  border-color: #edff4a;
+}
 
-  .jobCustomerAndSite {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        margin: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #5f3215;
-  }
+.active {
+  color: #000000;
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+.invoicing {
+  color: #000000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.completed {
+  color: #000000;
+  background-color: #88ff00;
+  border-color: #88ff00;
+}
+
+.toPrice {
+  color: #000000;
+  background-color: #ff00aa;
+  border: #ff00aa;
+}
+
+.jobCustomerAndSite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5f3215;
+}

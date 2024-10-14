@@ -1,6 +1,6 @@
-import Logo from '../../assets/BeaverLogo.svg';
-import UserProfile from './NavBarComponents/UserProfile';
-import styles from './NavBar.module.css';
+import Logo from "../../assets/BeaverLogo.svg";
+import UserProfile from "./NavBarComponents/UserProfile";
+import styles from "./NavBar.module.css";
 
 export default function NavBar() {
   return (
@@ -10,17 +10,16 @@ export default function NavBar() {
         <h1 className={styles.navBarAppName}>LogIt Beaver</h1>
       </div>
 
-        <div className={styles.navLinks}>
-            <a>Customers</a>
-            <a>Jobs</a>
-            <a>Reports</a>
-            <a>Help</a>
-        </div>    
+      <div className={styles.navLinks}>
+        <a>Customers</a>
+        <a>Jobs</a>
+        <a>Reports</a>
+        <a>Help</a>
+      </div>
 
-        <div className={styles.userProfile}>
-            <UserProfile />
-        </div>
+      <div className={styles.userProfile}>
+        <UserProfile />
+      </div>
     </div>
-    
   );
 }

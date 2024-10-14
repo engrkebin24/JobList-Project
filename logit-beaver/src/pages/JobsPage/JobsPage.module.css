@@ -1,53 +1,51 @@
-
 .sortAndFilterButtons {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-left: 20px;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 50px;
 }
 
 .jobSortButtons {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border: 2px groove #388E3C;
-    border-radius: 5px;;
-    padding: 5px;  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px groove #388e3c;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.jobIDSortButton, .jobDateSortButton, .jobFilterButton {
-    border: 2px groove #388E3C;
-    border-radius: 5px;
-    background-color: #ffce8f;
-    padding: 8px;      
-    font-weight: 600;
+.jobIDSortButton,
+.jobDateSortButton,
+.jobFilterButton {
+  border: 2px groove #388e3c;
+  border-radius: 5px;
+  background-color: #ffce8f;
+  padding: 8px;
+  font-weight: 600;
 }
 
 .jobFilterButtonContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border: 2px groove #388E3C;
-    border-radius: 5px;
-    padding: 5px;  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px groove #388e3c;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .jobListAndDetailsContainer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
 }
 
 .jobList {
-    flex: 0 1 60%; 
-    height: 600px; 
-    overflow-y: auto;
+  flex: 0 1 60%;
+  height: 600px;
+  overflow-y: auto;
 }
-    
 
 .jobDetailsPane {
-    flex: 0 1 40%; 
- 
-  
+  flex: 0 1 40%;
 }

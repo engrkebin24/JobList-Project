@@ -1,129 +1,126 @@
 .jobNotesList {
-    color: #5f3215;
-    border: 1px solid #5f3215;
-    padding: 10px;
-    margin-top: 5px;
-    justify-items: center;
+  color: #5f3215;
+  border: 1px solid #5f3215;
+  padding: 10px;
+  margin-top: 5px;
+  justify-items: center;
 }
 
 .jobNotesList ul {
-    list-style-position: inside;
-    padding-left: 20px; 
+  list-style-position: inside;
+  padding-left: 20px;
 }
 
 .jobNotesList li {
-    display: flex;
-    align-items: center; 
-    margin-bottom: 5px; 
-    position: relative; 
-    padding-left: 20px; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
 }
 
 .jobNotesList li::before {
-    content: '•'; 
-    position: absolute;
-    left: 0; 
-    color: #5f3215; 
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #5f3215;
 }
 
 .editJobNotes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px;
-    margin-top: 5px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  margin-top: 5px;
+  gap: 10px;
 }
 
 .editJobNotesToSave {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    margin-top: 5px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+  gap: 10px;
 }
 
-
 .noteItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    margin-top: 5px;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+}
 
 .newNoteInput {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 5px;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+  gap: 10px;
 }
 
 .noteInputField {
-    width: 600px; 
-    height: 50px;
-    text-wrap: wrap;
-    padding: 10px; 
-    border: 2px solid #ccc; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    color: #333; 
-    background-color: #fff; 
-    transition: border-color 0.3s ease; 
-    margin-top: 15px;
-    margin-bottom: 15px;
+  width: 600px;
+  height: 50px;
+  text-wrap: wrap;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .addNoteButton {
-    font-size: 12px;
-    font-weight: 700;
-    color: #5f3215;
-    background-color: #e8bd44;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5f3215;
+  background-color: #e8bd44;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .noteEditTextField {
-    width: 515px; 
-    height: 50px;
-    text-wrap: wrap;
-    padding: 10px; 
-    border: 2px solid #ccc; 
-    border-radius: 5px; 
-    font-size: 16px; 
-    color: #333; 
-    background-color: #fff; 
-    transition: border-color 0.3s ease; 
+  width: 515px;
+  height: 50px;
+  text-wrap: wrap;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
 }
 
 .saveNoteButton {
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff1c9; 
-    background-color: #af8102 ;
-    border: none;
-    border-radius: 10px;
-    padding: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff1c9;
+  background-color: #af8102;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .editNoteButton {
-    font-size: 12px;
-    font-weight: 700;
-    color: #af8102;
-    background-color: #fff1c9;
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    opacity: 0.8;
-  
+  font-size: 12px;
+  font-weight: 700;
+  color: #af8102;
+  background-color: #fff1c9;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0.8;
 }

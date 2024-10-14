@@ -28,8 +28,8 @@
   font-size: 150px;
   font-weight: 700;
   color: #5f3215;
-  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 
-               1px -1px 0 #000000, -1px 1px 0 #000000;
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000;
   margin: 25px;
 }
 
@@ -57,4 +57,3 @@
   padding: 10px 20px;
   cursor: pointer;
 }
-
