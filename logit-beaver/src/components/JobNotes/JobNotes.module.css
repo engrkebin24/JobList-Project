@@ -1,0 +1,129 @@
+.jobNotesList {
+    color: #5f3215;
+    border: 1px solid #5f3215;
+    padding: 10px;
+    margin-top: 5px;
+    justify-items: center;
+}
+
+.jobNotesList ul {
+    list-style-position: inside;
+    padding-left: 20px; /* Adjust padding to ensure enough space for bullet and text */
+}
+
+.jobNotesList li {
+    display: flex;
+    align-items: center; /* Center contents vertically */
+    margin-bottom: 5px; /* Add some space between list items */
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 20px; /* Space for the bullet */
+}
+
+.jobNotesList li::before {
+    content: '•'; /* Bullet character */
+    position: absolute;
+    left: 0; /* Position bullet at the start */
+    color: #5f3215; /* Bullet color */
+}
+
+.editJobNotes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.editJobNotesToSave {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+
+.noteItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+.newNoteInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.noteInputField {
+    width: 600px; 
+    height: 50px;
+    text-wrap: wrap;
+    padding: 10px; /* Space inside the input */
+    border: 2px solid #ccc; /* Border color and size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.addNoteButton {
+    font-size: 12px;
+    font-weight: 700;
+    color: #5f3215;
+    background-color: #e8bd44;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.noteEditTextField {
+    width: 515px; 
+    height: 50px;
+    text-wrap: wrap;
+    padding: 10px; /* Space inside the input */
+    border: 2px solid #ccc; /* Border color and size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.saveNoteButton {
+    font-size: 12px;
+    font-weight: 700;
+    color: #af8102;
+    background-color: #fff1c9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+}
+
+.editNoteButton {
+    font-size: 12px;
+    font-weight: 700;
+    color: #af8102;
+    background-color: #fff1c9;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
+  
+}

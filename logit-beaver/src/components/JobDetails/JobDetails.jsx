@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./JobDetails.module.css";
+import JobNotes from "../JobNotes/JobNotes";
 
 export default function JobDetails({ job, onResetSelection }) {
   const [status, setStatus] = useState(job ? job.status : "");
@@ -63,15 +64,19 @@ export default function JobDetails({ job, onResetSelection }) {
       
    
       <div className={styles.jobCustomer}>
-      <h3>Customer Details:</h3>
-      <div className={styles.jobCustomerDetails}>
-        <p>Name: {job.customer.customer_name}</p>
-        <p>Address: {job.customer.customer_address}</p>
-        <p>Phone: {job.customer.customer_contact_number}</p>
-        <p>Email: {job.customer.customer_email}</p>
+        <h3>Customer Details:</h3>
+        <div className={styles.jobCustomerDetails}>
+            <p>Name: {job.customer.customer_name}</p>
+            <p>Address: {job.customer.customer_address}</p>
+            <p>Phone: {job.customer.customer_contact_number}</p>
+            <p>Email: {job.customer.customer_email}</p>
+        </div>
+      </div>
+
+      <div className={styles.jobDetailsNotes}>
+            <JobNotes job={job} />
       </div>
       
-      </div>
 
       
     
