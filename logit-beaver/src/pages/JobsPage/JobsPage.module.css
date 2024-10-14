@@ -1,0 +1,40 @@
+
+.sortAndFilterButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.jobSortButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.jobFilterButton {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.jobListAndDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 20px;
+}
+
+.jobList {
+    flex: 0 1 60%; 
+    height: 600px; /* Specify the desired height */
+    overflow-y: auto;
+   
+}
+    
+
+.jobDetailsPane {
+    flex: 0 1 40%; 
+ 
+  
+}

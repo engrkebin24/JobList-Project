@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import JobListPanel from "../../components/JobListPanel/JobListPanel";
+import JobDetails from "../../components/JobDetails/JobDetails";
 import styles from "./JobsPage.module.css";
 
 const jobs = [
@@ -96,23 +97,34 @@ const jobs = [
             "Client requested extra logs for winter prep. Sourced materials for next visit.",
             "Inspected water diversion project. Confirmed stable streamflow."],
   },
-  
+  // More jobs...
 ];
 
 export default function JobsPage() {
+  const [selectedJob, setSelectedJob] = useState(null);
+  
+
+  const resetSelection = () => {
+    setSelectedJob(null);
+  };
+
   
 
   return (
    
     <div>
-     
-   
-       <div className={styles.jobListAndDetailsContainer}>
-        <div className={styles.jobList}>
-          <JobListPanel jobs={jobs}/>        
+    
 
+      <div className={styles.jobListAndDetailsContainer}>
+        <div className={styles.jobList}>
+          <JobListPanel
+            jobs={jobs}
+            onJobClick={setSelectedJob}
+          />
         </div>
-        
+        <div className={styles.jobDetailsPane}>
+          <JobDetails job={selectedJob} onResetSelection={resetSelection} />
+        </div>
       </div>
     </div>
   );
