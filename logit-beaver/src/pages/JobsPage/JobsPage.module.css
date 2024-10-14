@@ -41,7 +41,7 @@
 
 .jobList {
     flex: 0 1 60%; 
-    height: 600px; /* Specify the desired height */
+    height: 600px; 
     overflow-y: auto;
 }
     
