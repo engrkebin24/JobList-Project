@@ -6,6 +6,11 @@
 
 }
 
+.jobRow:hover {
+    opacity: 0.9;
+    border: 3px solid #ffce8f;
+}
+
 .jobHeader {
   display: flex;
   justify-content: space-between;

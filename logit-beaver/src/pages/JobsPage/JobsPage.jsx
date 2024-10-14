@@ -103,23 +103,91 @@ const jobs = [
 
 export default function JobsPage() {
   const [selectedJob, setSelectedJob] = useState(null);
-  
+  const [sortCriteria, setSortCriteria] = useState({
+    criteria: "id",
+    order: "asc",
+  });
+  const [filterStatus, setFilterStatus] = useState("");
 
   const resetSelection = () => {
     setSelectedJob(null);
   };
 
-  
+  const toggleSortOrder = (criteria) => {
+    setSortCriteria((prevState) => ({
+      criteria,
+      order:
+        prevState.criteria === criteria && prevState.order === "asc"
+          ? "desc"
+          : "asc",
+    }));
+  };
+
+  const handleFilterChange = (event) => {
+    setFilterStatus(event.target.value);
+  };
+
+  const getFilteredAndSortedJobs = () => {
+    let filteredJobs = jobs;
+
+    if (filterStatus) {
+      filteredJobs = filteredJobs.filter((job) => job.job_status === filterStatus);
+    }
+
+    if (sortCriteria.criteria) {
+      filteredJobs = filteredJobs.sort((a, b) => {
+        let comparison = 0;
+        if (sortCriteria.criteria === "id") {
+          comparison = a.job_id.localeCompare(b.job_id);
+        } else if (sortCriteria.criteria === "date") {
+          comparison = new Date(a.date_created) - new Date(b.date_created);
+        }
+        return sortCriteria.order === "asc" ? comparison : -comparison;
+      });
+    }
+
+    return filteredJobs;
+  };
 
   return (
    
     <div>
        <NavBar />
+   
+      <div className={styles.sortAndFilterButtons}>
+        <div className={styles.jobSortButtons}>
+          <h3>Sort by:</h3>
+          <button onClick={() => toggleSortOrder("id")} className={styles.jobIDSortButton}>
+            {sortCriteria.criteria === "id" && sortCriteria.order === "asc"
+              ? "Job No. ↑"
+              : "Job No. ↓"}
+          </button>
+          <button onClick={() => toggleSortOrder("date")} className={styles.jobDateSortButton}>
+            {sortCriteria.criteria === "date" && sortCriteria.order === "asc"
+              ? "Date Created (Oldest First) "
+              : "Date Created (Newest First) "}
+        </button>
+
+        </div>
+        
+        <div className={styles.jobFilterButtonContainer}>
+          <h3>Filter by:</h3>
+          <select onChange={handleFilterChange} className={styles.jobFilterButton}>
+            <option value="">All</option>
+            <option value="Scheduled">Scheduled</option>
+            <option value="Active">Active</option>
+            <option value="Invoicing">Invoicing</option>
+            <option value="Completed">Completed</option>
+            <option value="To Price">To Price</option>
+          </select>
+        </div>
+        
+      </div>
 
       <div className={styles.jobListAndDetailsContainer}>
         <div className={styles.jobList}>
           <JobListPanel
-            jobs={jobs}
+            jobs={getFilteredAndSortedJobs()}
             onJobClick={setSelectedJob}
           />
         </div>

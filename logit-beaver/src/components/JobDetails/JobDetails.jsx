@@ -44,7 +44,7 @@ export default function JobDetails({ job, onResetSelection }) {
 
 
         <button className={styles.jobStatus}>
-        <select value={status} onChange={handleStatusChange}>
+        <select value={status} onChange={handleStatusChange} className={styles.jobStatusDropdown}>
           <option value="scheduled">Scheduled</option>
           <option value="active">Active</option>
           <option value="invoicing">Invoicing</option>

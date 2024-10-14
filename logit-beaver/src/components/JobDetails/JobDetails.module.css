@@ -41,11 +41,18 @@
 }
 
 .jobStatus {
-    border: 2px groove #388E3C;
+    border: 2px groove #ffce8f;
     border-radius: 5px;
-    background-color: #A5D6A7;
+    background-color: transparent;
     padding: 5px;  
    }
+
+.jobStatusDropdown {
+    background-color: #ffce8f;
+    padding: 8px;      
+    font-weight: 600;
+}
+   
 
 .jobSite {
     display: flex;
