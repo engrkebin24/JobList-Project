@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    
     background-color: #A5D6A7;
     gap: 50px;
     
@@ -45,12 +44,27 @@
     border: 2px groove #388E3C;
     border-radius: 5px;
     background-color: #A5D6A7;
-    padding: 5px;
-
-    
+    padding: 5px;  
    }
 
-   .jobSite {
+.jobSite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #5f3215;
+    padding: 10px;
+    margin-top: 5px;
+   }
+
+.jobSite p, h3 {
+    margin: 2px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #5f3215;
+   }
+
+.jobCustomer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -62,16 +76,11 @@
     margin-top: 5px;
    }
 
-   .jobCustomer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.jobCustomer p, h3 {
+    margin: 2px;
     font-size: 18px;
     font-weight: 700;
     color: #5f3215;
-    border: 1px solid #5f3215;
-    padding: 10px;
-    margin-top: 5px;
    }
 
 .createJobButton {
