@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    background: #4CAF50;
+    opacity: 1;
+    align-items: center;
+    justify-content: space-between
+ }
+
+  .logoAndAppName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navBarLogo {
+    width: 80px;
+    margin: 10px 10px 10px 35px;
+    opacity: 1;
+  }
+
+  .navbarAppName {
+    font-size: 50px;
+    font-weight: 700;
+    color: #5f3215;
+    text-shadow: 2px 2px 4px #e8b46f
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: #ffad87;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .userProfile {
+    position: relative; /* Ensure the parent container is positioned */
+  }
