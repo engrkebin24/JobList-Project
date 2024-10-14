@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./JobDetails.module.css";
 import JobNotes from "../JobNotes/JobNotes";
 
-
 // Component for the Job Details Panel to display detailed information about the selected job (from the Job List Panel)
 export default function JobDetails({ job, onResetSelection }) {
   // State to manage the Job Status
@@ -71,6 +70,8 @@ export default function JobDetails({ job, onResetSelection }) {
         <h3>Site Address: </h3>
         <p>{job.job_address}</p>
       </div>
+
+      {/* Features for displaying the Job Site Address in a Map is also considered*/}
 
       {/* Job Customer details */}
       <div className={styles.jobCustomer}>

@@ -1,50 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    background: #4CAF50;
-    opacity: 1;
-    align-items: center;
-    justify-content: space-between
- }
+  margin: 0;
+  padding: 0;
+}
 
-  .logoAndAppName {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navBarLogo {
-    width: 80px;
-    margin: 10px 10px 10px 35px;
-    opacity: 1;
-  }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background: #4caf50;
+  opacity: 1;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .navBarAppName {
-    font-size: 50px;
-    font-weight: 700;
-    color: #5f3215;
-    text-shadow: 2px 2px 4px #e8b46f
-  }
+.logoAndAppName {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .navLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    color: #ffcfb9;
-    text-shadow: 0.5px 0.5px 1px #000000;
-    font-size: 22px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-  
-  .userProfile {
-    position: relative; 
-  }
+.navBarLogo {
+  width: 80px;
+  margin: 10px 10px 10px 35px;
+  opacity: 1;
+}
+
+.navBarAppName {
+  font-size: 50px;
+  font-weight: 700;
+  color: #5f3215;
+  text-shadow: 2px 2px 4px #e8b46f;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: #ffcfb9;
+  text-shadow: 0.5px 0.5px 1px #000000;
+  font-size: 22px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.userProfile {
+  position: relative;
+}

@@ -1,128 +1,126 @@
 .jobDetailsPane {
-    margin: 10px;
-    padding: 10px;
-    background-color: #A5D6A7;
+  margin: 10px;
+  padding: 10px;
+  background-color: #a5d6a7;
 }
 
 .jobDetailsPaneEmpty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #A5D6A7;
-    gap: 50px;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #a5d6a7;
+  gap: 50px;
 }
 
 .jobDetailsPaneEmpty h1 {
-    font-size: 20px;
-    color: #5f3215;
+  font-size: 20px;
+  color: #5f3215;
 }
 
 .jobDetailsHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #ffce8f;
-    background-color: #388E3C;
-    border: 1px solid #327e36;
-    margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #ffce8f;
+  background-color: #388e3c;
+  border: 1px solid #327e36;
+  margin-top: 5px;
 }
 
 .jobCreationDate {
-    font-size: 14px;
-    font-weight: lighter;
-    color: white;
-    opacity: 0.8;
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+  opacity: 0.8;
 }
 
 .jobStatus {
-    border: 2px groove #ffce8f;
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 5px;  
-   }
+  border: 2px groove #ffce8f;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 5px;
+}
 
 .jobStatusDropdown {
-    background-color: #ffce8f;
-    padding: 8px;      
-    font-weight: 600;
+  background-color: #ffce8f;
+  padding: 8px;
+  font-weight: 600;
 }
-   
 
 .jobSite {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #5f3215;
-    padding: 10px;
-    margin-top: 5px;
-   }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #5f3215;
+  padding: 10px;
+  margin-top: 5px;
+}
 
-.jobSite p, h3 {
-    margin: 2px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #5f3215;
-   }
+.jobSite p,
+h3 {
+  margin: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5f3215;
+}
 
 .jobCustomer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 18px;
-    font-weight: 700;
-    color: #5f3215;
-    border: 1px solid #5f3215;
-    padding: 10px;
-    margin-top: 5px;
-   }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5f3215;
+  border: 1px solid #5f3215;
+  padding: 10px;
+  margin-top: 5px;
+}
 
-.jobCustomer p, h3 {
-    margin: 2px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #5f3215;
-   }
+.jobCustomer p,
+h3 {
+  margin: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5f3215;
+}
 
 .createJobButton {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffce8f;
-    background-color: #388E3C;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffce8f;
+  background-color: #388e3c;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .jobDetailsNotes {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .viewAllJobsButtonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 5px;
 }
 
 .viewAllJobsButton {
-    font-size: 20px;
-    font-weight: 700;
-    color: #ffce8f;
-    background-color: #388E3C;
-    border: none;
-    border-radius: 10px;
-    padding: 20px 20px;
-    cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffce8f;
+  background-color: #388e3c;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 20px;
+  cursor: pointer;
 }
